@@ -1,5 +1,5 @@
 {
-  "name": "lexer",
+  "name": "css-lexer",
   "version": "0.1.0",
   "description": "",
   "main": "lib/lexer.js",
@@ -9,7 +9,7 @@
     "test": "cd test && ../node_modules/mocha/bin/mocha **/*-test.js && cd .."
   },
   "keywords": [],
-  "author": "",
+  "author": "Michell Ayala <starships@outlook.com>",
   "license": "ISC",
   "devDependencies": {
     "chai": "3.5.0",
