@@ -1,0 +1,29 @@
+# top-most EditorConfig file
+root = true
+
+# General rules
+# 1. Unix-style newlines
+# 2. newline ending file
+# 3. utf8 encoding
+# 4. tab indent style
+# 5. 4 spaces as a tab
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = tab
+indent_size = 4
+
+# Indentation override for all JavaScript files
+# 1. space indent style
+# 2. 2 spaces as a tab
+[**.js]
+indent_style = space
+indent_size = 2
+
+# Matches the exact files either package.json or .travis.yml
+# 1. space indent style
+# 2. 2 spaces as a tab
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2

@@ -1,0 +1,3 @@
+# auto-save deps [npm install <package>]
+save=true
+save-exact=true

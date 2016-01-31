@@ -1,0 +1,10 @@
+#!/usr/bin/env/ node
+
+'use strict';
+
+const Lexer = require('../lib/lexer');
+const file = process.argv[2];
+
+const lexem = Lexer.analize(file);
+
+process.stdout.write(`${JSON.stringify(lexem)}`);
