@@ -1,10 +1,10 @@
 # CSS Lexer
-Simple css lexer (duh!). It only works with classes.
+Just an experiment
 
 ## Usage
 ```
 $ npm install -g css-lexer
-$ css-lexer styles.css dest.txt
+$ css-lexer styles.css
 ```
 
 ## Result
