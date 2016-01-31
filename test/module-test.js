@@ -2,18 +2,18 @@
 
 const Assert = require('chai').assert;
 const Expect = require('chai').expect;
-const Lexer = require('../lib/lexer');
+const CSSLexer = require('../lib/css-lexer');
 
 describe('Lexer module test', () => {
   it('should be ok (Lexer module)', () => {
-    Expect(Lexer).to.be.ok;
-    Expect(Lexer).to.be.an('object');
-    Expect(Lexer).to.have.property('analize');
-    Expect(Lexer.analize).to.be.a('function');
+    Expect(CSSLexer).to.be.ok;
+    Expect(CSSLexer).to.be.an('object');
+    Expect(CSSLexer).to.have.property('analize');
+    Expect(CSSLexer.analize).to.be.a('function');
   });
 
   it('should analize the file and return the tokens.', () => {
-    const lexem = Lexer.analize('styles.css');
+    const lexem = CSSLexer.analize('styles.css');
 
     Expect(lexem).to.be.ok;
     Expect(lexem).to.be.an('array');

@@ -1,11 +1,9 @@
 {
   "name": "css-lexer",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "",
-  "main": "lib/lexer.js",
-  "bin": {
-    "css-lexer": "bin/lexer"
-  },
+  "main": "lib/css-lexer.js",
+  "bin": "bin/css-lexer",
   "scripts": {
     "lint": "node_modules/eslint/bin/eslint.js **/*.js",
     "test": "cd test && ../node_modules/mocha/bin/mocha **/*-test.js && cd .."
