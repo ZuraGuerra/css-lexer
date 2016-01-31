@@ -1,23 +1,36 @@
 # CSS Lexer
-Simple css lexer (duh!). It only works with classes.
+Just an experiment
 
 ## Usage
 ```
 $ npm install -g css-lexer
-$ css-lexer styles.css dest.txt
+$ css-lexer some-file
 ```
 
 ## Result
 
-```css
-// Input
-.btn {
-	background-color: red;
-	color: blue;
-}
+```js
+// Input (some-file.txt)
+btn-bing:
+	- background-color: red;
+	- color: red;
+	- float: left;
 
 // Output
 [
-	{ element: 'btn', tokens: [ 'background-color:red', 'color:blue' ] }
+	{
+	 	element: 'btn-bing',
+		tokens: [ 'background-color:red', 'color:blue' ],
+		css: '{ background-color: red; color: blue; }'
+	}
 ]
+```
+
+It creates an structure for web-components
+
+```
+elements/
+	elements.html // containes the imports
+	btn-bing/ // directory
+		btn-bing.html // automatically linked to elements.html
 ```
