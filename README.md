@@ -9,15 +9,19 @@ $ css-lexer styles.css dest.txt
 
 ## Result
 
-```css
-// Input
-.btn {
-	background-color: red;
-	color: blue;
-}
+```js
+// Input (some-file.txt)
+btn-bing:
+	- background-color: red;
+	- color: red;
+	- float: left;
 
 // Output
 [
-	{ element: 'btn', tokens: [ 'background-color:red', 'color:blue' ] }
+	{
+	 	element: 'btn-bing',
+		tokens: [ 'background-color:red', 'color:blue' ],
+		css: '{ background-color: red; color: blue; }'
+	}
 ]
 ```
