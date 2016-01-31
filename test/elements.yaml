@@ -1,0 +1,11 @@
+btn-base:
+    background-color: red;
+    color: blue;
+_
+btn-primary:
+    weight: bold;
+_
+btn-warning:
+    font-size: 16px;
+    color: green;
+    background-color: red;

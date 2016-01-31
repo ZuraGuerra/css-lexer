@@ -13,7 +13,7 @@ describe('Lexer module test', () => {
   });
 
   it('should analize the file and return the tokens.', () => {
-    const lexem = CSSLexer.analize('styles.css');
+    const lexem = CSSLexer.analize('elements.yaml');
 
     Expect(lexem).to.be.ok;
     Expect(lexem).to.be.an('array');

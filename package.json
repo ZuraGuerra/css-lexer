@@ -1,6 +1,6 @@
 {
   "name": "css-lexer",
-  "version": "0.1.4",
+  "version": "0.2.4",
   "description": "",
   "main": "lib/css-lexer.js",
   "bin": "bin/css-lexer",
