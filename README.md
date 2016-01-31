@@ -4,7 +4,7 @@ Just an experiment
 ## Usage
 ```
 $ npm install -g css-lexer
-$ css-lexer styles.css
+$ css-lexer some-file
 ```
 
 ## Result
@@ -24,4 +24,13 @@ btn-bing:
 		css: '{ background-color: red; color: blue; }'
 	}
 ]
+```
+
+It creates an structure for web-components
+
+```
+elements/
+	elements.html // containes the imports
+	btn-bing/ // directory
+		btn-bing.html // automatically linked to elements.html
 ```
