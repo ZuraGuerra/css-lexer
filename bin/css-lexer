@@ -3,10 +3,9 @@
 'use strict';
 
 const fs = require('fs');
-const Lexer = require('../lib/lexer');
+const Lexer = require('../lib/css-lexer');
 const src = process.argv[2];
-const dest = process.argv[3];
 
 const lexem = Lexer.analize(src);
-
-fs.writeFileSync(dest, JSON.stringify(lexem));
+const tokens = Lexer.parse(lexem);
+Lexer.create(tokens);
