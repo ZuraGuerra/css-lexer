@@ -12,9 +12,9 @@ $ css-lexer some-file
 ```js
 // Input (some-file.txt)
 btn-bing:
-	- background-color: red;
-	- color: red;
-	- float: left;
+	background-color: red;
+	color: red;
+	float: left;
 
 // Output
 [
