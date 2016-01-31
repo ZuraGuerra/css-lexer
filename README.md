@@ -4,7 +4,7 @@ Simple css lexer (duh!). It only works with classes.
 ## Usage
 ```
 $ npm install -g css-lexer
-$ css-lexer styles.css | some_file.txt
+$ css-lexer styles.css dest.txt
 ```
 
 ## Result

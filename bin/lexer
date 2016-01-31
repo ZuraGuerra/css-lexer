@@ -2,9 +2,11 @@
 
 'use strict';
 
+const fs = require('fs');
 const Lexer = require('../lib/lexer');
-const file = process.argv[2];
+const src = process.argv[2];
+const dest = process.argv[3];
 
-const lexem = Lexer.analize(file);
+const lexem = Lexer.analize(src);
 
-process.stdout.write(`${JSON.stringify(lexem)}`);
+fs.writeFileSync(dest, JSON.stringify(lexem));
