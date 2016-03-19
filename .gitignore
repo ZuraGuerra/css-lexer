@@ -1,8 +1,11 @@
 # modules and dependencies
 node_modules
 
-# auto-saved files
+# gedit auto-saved files
 *~
+
+# vim auto-saved files
+*.swp
 
 # system logs
 log
